@@ -14,7 +14,7 @@ We were able to get more than 160 responses to our survey giving us a great data
 The google form was able to put all our data into an Excel file and we imported the excel file directly into Pandas. This file contained 161 rows and 17 columns of data collected from the survey.
 
 PREPROCESSING<br>
-We preprocessed the data by
+We preprocessed the data by:
 * renaming the columns
 * splitting the data on semi-colons or commas as needed to get each response into it's own column
 * dropping any extra responses beyond the quantity requested
