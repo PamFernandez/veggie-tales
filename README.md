@@ -23,6 +23,19 @@ We preprocessed the data by:
 * dropping all non-beneficial columns
 * capitalizing all the values in the database
 * doing lots of manual cleaning to make sure values are uniform
-* binning all rare categorical values in several columns into a new value called "other"
+* binning all rare categorical values in the 'fruits_1', 'fruits_2', and 'fruits_3' into a new value called "other"
+* transforming the 'gender' column to be numeric
+* using `pd.get_dummies()` to convert categorical data to numeric,
 
+The resulting data included 443 features. 
+<br>
+<br>
+# Now I'm stuck. 
+- I think that to `get_clusters` I need to have scaled data.
+- I can't scale our data because it's not numeric.
+- I don't think I can `get_clusters` on non numeric data.
+- So I used `pd.get_dummies` to convert categorical data to numeric.
+- But now I can't cluster any columns - because they are 'fruits_3_ORANGES' which has only oranges in it, and 'fruits_3_PEACHES' which has only the peaches in it.
 
+# And. 
+I also don't know what to do the Machine Learning on because there is no binary data column. Like for our homework one of the columns was IS_SUCCESSFUL - it was a 1 or 0 indicating yes or no... that was the target variable to indicate if the machine was learning succsssfully or not.
