@@ -2,7 +2,7 @@
 # Veggie Tales
 
 ## Overview
-### The goal of this project is to see if we can use machine learning to predict what vegetables a person may like given their current vegetable preferance.
+### The goal of this project is to see if we can use machine learning to predict what vegetables a person may like given their current vegetable preference.
 ----------------------------
 ----------------------------
 
