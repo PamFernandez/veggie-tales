@@ -27,15 +27,23 @@ We preprocessed the data by:
 * transforming the 'gender' column to be numeric
 * using `pd.get_dummies()` to convert categorical data to numeric,
 
-The resulting data included 443 features. 
-<br>
-<br>
-# Now I'm stuck. 
-- I think that to `get_clusters` I need to have scaled data.
-- I can't scale our data because it's not numeric.
-- I don't think I can `get_clusters` on non numeric data.
-- So I used `pd.get_dummies` to convert categorical data to numeric.
-- But now I can't cluster any columns - because they are 'fruits_3_ORANGES' which has only oranges in it, and 'fruits_3_PEACHES' which has only the peaches in it.
+The resulting data included 637 features. 
 
-# And. 
-I also don't know what to do the Machine Learning on because there is no binary data column. Like for our homework one of the columns was IS_SUCCESSFUL - it was a 1 or 0 indicating yes or no... that was the target variable to indicate if the machine was learning succsssfully or not.
+MAKE CLUSTERS<br>
+We attempted to make clusters, but the plots were unremarkable because we had used `pd.get_dummies()` to convert our data.
+
+COLLABORATIVE FILTERING<br>
+We then created a list of all the vegetables that were in the to_eat_1, to_eat_2, to_eat_3, to_eat_4, and to_eat_5. And created a unique veg_id for each vegetable.
+
+We then prepaerd the data for collaborative filtering by:
+* creating a data frame that included only the user 'id', the 'veg_id', and a value of '1' to indicate that the user likes this vegetable
+* creating a data frram that indicated which vegetables the user did NOT like and gave it a value of '0'
+* Using random generator to select an equal number of rows that have 0
+
+So in the end we had a dataset that had three columns - user 'id', 'veg_id' and 'likes' and 1750 rows where there were 875 rows with 1s (indicating like) and 875 rows with 0s (indicating not on their list of likes).
+
+We then applied the collaborative filtering to this dataset and found....
+
+# what did we find??
+
+
