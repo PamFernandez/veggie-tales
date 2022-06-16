@@ -42,8 +42,5 @@ We then prepaerd the data for collaborative filtering by:
 
 So in the end we had a dataset that had three columns - user 'id', 'veg_id' and 'likes' and 1750 rows where there were 875 rows with 1s (indicating like) and 875 rows with 0s (indicating not on their list of likes).
 
-We then applied the collaborative filtering to this dataset and found....
-
-# what did we find??
-
+We then applied the collaborative filtering to this dataset and created the visualizations that resulted in a tableau dashboard that can be found here: https://public.tableau.com/app/profile/emma.dublin/viz/VeggieTalesProject4/DEMOGRAPHICS?publish=yes
 
